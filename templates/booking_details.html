@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking Details</title>
+</head>
+<body>
+<h1>Booking Details</h1>
+<form action="/confirm_booking" method="POST">
+<label for="passenger_name">Passenger Name:</label>
+<input type="text" name="passenger_name" id="passenger_name">
+<br>
+<label for="passenger_email">Passenger Email:</label>
+<input type="email" name="passenger_email" id="passenger_email">
+<br>
+<label for="passenger_phone">Passenger Phone:</label>
+<input type="tel" name="passenger_phone" id="passenger_phone">
+<br>
+<input type="hidden" name="flight_id" value="{{ flight.flight_id }}">
+<input type="submit" value="Confirm Booking">
+</form>
+</body>
+</html>
+
+
